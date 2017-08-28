@@ -12,10 +12,11 @@ node(''){
     stage('check params'){
         echo params.branch
 
+        daFoo {
+            word = myWord
+        }
+
     }
 }
 
-daFoo {
-    word = myWord
-}
 utils.makeItBump(myWord)
