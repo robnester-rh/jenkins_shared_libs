@@ -2,7 +2,8 @@
 library "daFoo@${params.branch}"
 
 //@Library("github.com/robnester-rh/jenkins_shared_libs@devel") _
-library('Utils@devel').org.centos.Utils.makeItBump()
+library('Utils@devel').org.centos
+
 //import org.centos.Utils
 
 //def utils = new Utils()
@@ -19,5 +20,4 @@ node(''){
 daFoo {
     word = myWord
 }
-
-makeItBump(myWord)
+Utils.makeItBump(myWord)
