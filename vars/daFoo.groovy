@@ -4,9 +4,7 @@ def call(body) {
     body.delegate = config
     body()
 
-    node() {
-        stage('squiggle it'){
+    stage('squiggle it'){
             echo "${config.word} squiggles"
-        }
     }
 }
