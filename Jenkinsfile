@@ -2,7 +2,6 @@
 library "daFoo@${params.branch}"
 
 @Library("Utils") _
-
 import org.centos.Utils
 
 def utils = new Utils()
