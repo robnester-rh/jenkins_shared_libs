@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 library "daFoo@${params.branch}"
-@Library('Utils')
+@Library("github.com/robnester-rh/shared_jenkins_libs@${params.branch}")
+
 import org.centos.Utils
-//
 
 def utils = new Utils()
 
