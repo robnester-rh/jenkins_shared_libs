@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 library "daFoo@${params.branch}"
 
-import org.centos.Utils
-
-def utils = new Utils()
+//import org.centos.Utils
+//
+//def utils = new Utils()
 
 def myWord = 'snake'
 
@@ -17,4 +17,4 @@ node{
 daFoo {
     word = myWord
 }
-utils.makeItBump(myWord)
+//utils.makeItBump(myWord)
