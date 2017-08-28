@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-library 'daFoo'
+@Library('daFoo') _
 
 daFoo {
     word = 'snake'
