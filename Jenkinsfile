@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-library "daFoo@"
+library "daFoo@${params.branch}"
 
 import org.centos.Utils
 
