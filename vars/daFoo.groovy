@@ -5,6 +5,8 @@ def call(body) {
     body()
 
     node() {
-        echo "${config.word} squiggles"
+        stage('squiggle it'){
+            echo "${config.word} squiggles"
+        }
     }
 }
