@@ -4,7 +4,7 @@ library 'Utils'
 
 import org.centos.Utils
 
-utils = new Utils()
+def utils = new Utils()
 
 def myWord = 'snake'
 
