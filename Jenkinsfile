@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 library "daFoo@${params.branch}"
 
-@Library("github.com/robnester-rh/jenksin_shared_libs@${params.branch}") _
+@Library("github.com/robnester-rh/jenksin_shared_libs@devel") _
 
 import org.centos.Utils
 
