@@ -7,7 +7,7 @@ def utils = new Utils()
 
 def myWord = 'snake'
 
-node(){
+node{
     stage('check params'){
         echo params.branch
 
