@@ -9,15 +9,12 @@ def utils = new Utils()
 def myWord = 'snake'
 
 node(''){
-    stage('check params'){
+    stage('check params') {
         echo params.branch
-
-        daFoo {
-            word = myWord
-        }
-
-        utils.makeItBump(myWord)
-
     }
+    daFoo {
+        word = myWord
+    }
+    utils.makeItBump(myWord)
 }
 
