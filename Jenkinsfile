@@ -3,9 +3,9 @@ library "daFoo@${params.branch}"
 
 //@Library("github.com/robnester-rh/jenkins_shared_libs@devel") _
 library('Utils@devel').org.centos.Utils.makeItBump()
-import org.centos.Utils
+//import org.centos.Utils
 
-def utils = new Utils()
+//def utils = new Utils()
 
 def myWord = 'snake'
 
