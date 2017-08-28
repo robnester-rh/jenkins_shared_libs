@@ -1,5 +1,7 @@
 package org.centos
 
 def makeItBump(word){
-    echo ("${word} is bumpin'")
+    stage('Bump It'){
+        echo ("${word} is bumpin'")
+    }
 }

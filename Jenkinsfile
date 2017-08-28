@@ -16,7 +16,8 @@ node(''){
             word = myWord
         }
 
+        utils.makeItBump(myWord)
+
     }
 }
 
-utils.makeItBump(myWord)
