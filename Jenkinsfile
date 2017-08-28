@@ -2,10 +2,6 @@
 
 library 'daFoo'
 
-node() {
-    stage("boo"){
-        daFoo{
-            word = 'snake'
-        }
-    }
+daFoo {
+    word = 'snake'
 }
