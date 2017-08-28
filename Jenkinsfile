@@ -1,6 +1,5 @@
 #!/usr/bin/env groovy
-library 'daFoo'
-library 'Utils'
+//library 'daFoo'
 
 import org.centos.Utils
 
