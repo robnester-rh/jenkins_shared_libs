@@ -12,6 +12,8 @@ node(''){
     stage('check params'){
         echo params.branch
 
+        echo "this is devel branch"
+
         daFoo {
             word = myWord
         }
