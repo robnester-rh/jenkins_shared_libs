@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-node('foo') {
+node() {
     stage("boo"){
         daFoo{
             word = 'snake'
