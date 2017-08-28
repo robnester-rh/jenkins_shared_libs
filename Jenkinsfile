@@ -7,7 +7,7 @@ library "daFoo@${params.branch}"
 
 def myWord = 'snake'
 
-node{
+node('any'){
     stage('check params'){
         echo params.branch
 
