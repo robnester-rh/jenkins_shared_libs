@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
-//library 'daFoo'
+def branch = 'master'
+library "daFoo@${branch}"
 
 import org.centos.Utils
 
