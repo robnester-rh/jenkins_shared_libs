@@ -1,10 +1,7 @@
 #!/usr/bin/env groovy
 library "daFoo@${params.branch}"
+@Library('Utils@devel')
 
-library identifier: 'Utils@devel', retriever: modernSCM(
-        [$class: 'GitSCMSource',
-         remote: 'git@github.com:robnester-rh/jenksin_shared_libs.git'
-        ])
 import org.centos.Utils
 
 def utils = new Utils()
