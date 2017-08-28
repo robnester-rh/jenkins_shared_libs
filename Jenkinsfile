@@ -1,12 +1,10 @@
 #!/usr/bin/env groovy
 library "daFoo@${params.branch}"
 
-//@Library("github.com/robnester-rh/jenkins_shared_libs@devel") _
-//library("github.com/robnester-rh/jenkins_shared_libs@${params.branch}").org.centos.Utils.makeItBump()
+@Library("github.com/robnester-rh/jenkins_shared_libs@devel") _
+import org.centos.Utils
 
-//import org.centos.Utils
-
-//def utils = new Utils()
+def utils = new Utils()
 
 def myWord = 'snake'
 
@@ -20,4 +18,4 @@ node(''){
 daFoo {
     word = myWord
 }
-makeItBump(myWord)
+utils.makeItBump(myWord)
