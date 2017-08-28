@@ -1,14 +1,12 @@
 #!/usr/bin/env groovy
-library "github.com/robnester-rh/jenkins_shared_libs@${params.branch}"
+library "github.com/robnester-rh/jenkins_shared_libs@${env.branch}"
 
 //@Library("github.com/robnester-rh/jenkins_shared_libs@devel") _
 
-env.REMOTE = env.BRANCH_NAME ?: 'https://github.com/robnester-rh/jenkins_shared_libs.git'
-//env.ghprbActualCommit = env.ghprbActualCommit ?: 'master'
-
-library identifier: "jenkins_shared_libs@${env.BRANCH_NAME}",
+library identifier: "jenkins_shared_libs@${env.branch}",
         retriever: modernSCM([$class: 'GitSCMSource',
-                              remote: "${env.REMOTE}"])
+                              remote: "https://github.com/robnester-rh/jenkins_shared_libs@${env.branch}"])
+
 import org.centos.*
 //import org.centos.Utils
 
@@ -18,7 +16,7 @@ def myWord = 'snake'
 
 node(''){
     stage('check params') {
-        echo params.branch
+        echo env.branch
     }
     daFoo {
         word = myWord
